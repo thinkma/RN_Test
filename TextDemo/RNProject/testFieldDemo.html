@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TextFieid</title>
+
+    <!-- -->
+    <!--<script src="./build/react.js" charset="utf-8"></script>-->
+    <!--<script src="./build/react-dom.js" charset="utf-8"></script>-->
+    <!--<script src="./build/browser.min.js"></script>-->
+    <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.min.js"></script>
+
+</head>
+<body>
+<div id="containerDemo"></div>
+<script type="text/babel">
+    var showEdit = React.createClass({
+        render:function (){
+            return <textarea style="width:300px;height:300px"></textarea>
+            }
+    });
+    ReactDOM.render(<showEdit />,document.getElementById("containerDemo");
+</script>
+
+</body>
+<!-- 在react开发中使用JSX 更在Javascript不兼容 在使用JSX的地方 要是设置type： text/babel -->
+
+</html>

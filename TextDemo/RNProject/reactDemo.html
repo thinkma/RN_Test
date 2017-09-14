@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./build/react.js" charset="utf-8"></script>
+    <script src="./build/react-dom.js" charset="utf-8"></script>
+    <script src="./build/browser.min.js" charset="uft-8"></script>
+
+</head>
+<body>
+<div id="thisONe"></div>
+<script>
+    var showMessage = React.createClass({
+        render : function (){
+            <div style = {{backgroundColor:"yellow",borderWidth:1,borderColor:"black"}}>
+            <h1><{this.props.firstRow}></h1>
+            <p classNames="pStyle">{this.props.secondRow}</p>
+            </div>
+        }
+    });
+
+    class videos extends React.component {
+        render(){
+            return <h1>thisdemo</h1>
+        };
+    }
+    ReactDOM.render({
+        <showMessage firstRow = "你好" secondRow = "你好2" />,
+       // <h1 class="videos" />,
+            document.getElementById("thisONe")
+    })
+
+
+</script>
+</body>
+</html>
